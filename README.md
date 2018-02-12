@@ -1,7 +1,7 @@
-Bokeh in Jupyter Notebooks
+Bokeh in Jupyter Notebooks 中文版
 ==========================
 
-Welcome to [Bokeh](https://bokeh.pydata.org/) in Jupyter Notebooks!
+欢迎来到 [Bokeh](https://bokeh.pydata.org/) in Jupyter Notebooks!
 
 Bokeh is a Python interactive visualization library for large datasets that
 natively uses the latest web technologies. Its goal is to provide elegant,
