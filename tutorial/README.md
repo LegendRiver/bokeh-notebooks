@@ -1,15 +1,15 @@
-## Clone or download the repo
-First get local copies of the tutorial notebooks:
+## 克隆或者下载
+首先，下载教程到本地：
 
 ```
 $ git clone https://github.com/bokeh/bokeh-notebooks.git
 ```
 
-Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
+或者从这个地址下载：https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 
-## Install the dependencies
+## 安装依赖包
 
-This tutorial has been tested on:
+这个教程经过如下版本测试：
 
 * bokeh 0.12.7
 * pandas 0.20.3
@@ -18,58 +18,56 @@ This tutorial has been tested on:
 * pillow 4.2.1
 * selenium 3.5.0
 
-Other combinations may work also.
+其它组合也可能可以工作。
 
-The quickest, easiest way to install is to use Anaconda (or Miniconda):
+最快最容易的方法是使用 Anaconda (或者 Miniconda):
 
-#### Installing with anaconda
+#### 使用 anaconda 安装
 
-Install [anaconda](http://anaconda.com/downloads)
+安装 [anaconda](http://anaconda.com/downloads)
 
-Anaconda should come with all the dependencies included, but you may need to update your versions.
+Anaconda 应该已经包括了所有需要的包，但是可能需要更新其版本。
 
-#### Installing with miniconda
+#### 使用 miniconda 安装
 
-Install [miniconda](http://conda.pydata.org/miniconda.html).
+安装 [miniconda](http://conda.pydata.org/miniconda.html).
 
-Use the command line to create an environment and install the packages:
+使用如下命令创建一个环境并且安装包：
+
+注意：在 `tutorial` 目录（有 `environment.yml` 文件的）运行这些命令。
 
 ```bash
 $ conda env create
 $ source activate bokeh-notebooks
 ```
 
-NOTE: Run this in the `tutorial` directory where `environment.yml` file is.
-
 ----
 
-Once you've got a base install, you can install the remaining dependencies with:
+以上安装好了后，接着安装剩下的依赖包：
 
 ```bash
 conda install phantomjs pillow selenium
 ```
 
-## Get the sample data
+## 获取示例数据
 
-Bokeh has a sample data download that gives us some data to build demo visualizations. To get
-it run the following command at your command line:
+Bokeh 有一些示例数据可下载，用于展示可视化效果。使用如下命令获取：
 
 ```bash
 $ bokeh sampledata
 ```
 
-### Install Datashader and Holoviews (optional)
+### 安装 Datashader 和 Holoviews (可选)
 
-Some optional sections require the additional packages Flask, Datashader, and Holoviews.
-These  can be installed with:
+有些可选章节需要附加的包 Flask，Datashader 和 Holoviews。
 
 ```bash
 $ conda install -c datashader holoviews flask
 ```
 
-## Run the Jupyter notebook
+## 运行 Jupyter notebook
 
-From this folder run jupyter notebook, and open the [00 - Introduction and Setup.ipynb](00 - Introduction and Setup.ipynb) notebook.
+从这个目录运行 jupyter notebook，然后打开 [00 - Introduction and Setup.ipynb](00 - Introduction and Setup.ipynb)。
 
 ```
 $ jupyter notebook
